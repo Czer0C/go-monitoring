@@ -1,6 +1,7 @@
 package models
 
 type Service struct {
-	Name string
-	URL  string
+	Name   string
+	URL    string
+	Method string
 }
