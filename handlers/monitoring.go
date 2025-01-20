@@ -23,6 +23,7 @@ func monitorService(service models.Service) {
 	var statusCode string
 	if err != nil {
 		alertError(service, err, start.Local().Format("2006-01-02 15:04:05"))
+
 		statusCode = "0"
 	} else {
 		defer resp.Body.Close()

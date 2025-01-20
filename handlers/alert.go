@@ -46,4 +46,5 @@ func alertError(service models.Service, err error, time string) {
 	if resp.StatusCode != http.StatusOK {
 		// return fmt.Errorf("error: received non-200 response code: %v", resp.StatusCode)
 	}
+
 }
